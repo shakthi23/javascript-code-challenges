@@ -1,0 +1,13 @@
+let textstr = 'test-sdsdsd.ds.ds sds';
+textstr = textstr.replaceAll('.', '[]').replaceAll('-', '[]').replaceAll(' ', '[]');
+console.log(textstr);
+
+
+
+function truncateString(str, charCount) {
+    if (str.length > charCount) {
+        return str.substr(0, charCount - 3) + '...';
+    } else {
+        return str;
+    }
+}
